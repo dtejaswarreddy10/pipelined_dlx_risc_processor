@@ -15,5 +15,5 @@ module mem_stage(
 );
 	
 	dmem Data_Memory(.clk(clk),.reset(reset),.mem_write(mem_write),.mem_read(mem_read),.address(alu_data_in),.write_data(read_data2_in),.read_data(read_data_out));
-	assign mux_pcsrc = zero && branch ;
+	assign mux_pcsrc = Zero && Branch ;
 endmodule
