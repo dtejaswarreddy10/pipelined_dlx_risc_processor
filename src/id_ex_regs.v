@@ -21,7 +21,7 @@ module id_ex_regs (
 	input mem_read_in,
 	input mem_write_in,
 
-	input reg_read_in,
+	input reg_write_in,
 	input mem_to_reg_in,
 
 	output reg [31:0] a_out,
@@ -39,7 +39,7 @@ module id_ex_regs (
         output reg mem_read_out,
         output reg mem_write_out,
 
-        output reg reg_read_out,
+        output reg reg_write_out,
         output reg mem_to_reg_out
 
 );
@@ -62,7 +62,7 @@ module id_ex_regs (
         		mem_read_out	<= 'd0;
         		mem_write_out	<= 'd0;
 
-        		reg_read_out	<= 'd0;
+        		reg_write_out	<= 'd0;
         		mem_to_reg_out	<= 'd0;
 
 		end else begin
@@ -81,7 +81,7 @@ module id_ex_regs (
         		mem_read_out	<= mem_read_in;
         		mem_write_out	<= mem_write_in;
 
-        		reg_read_out	<= reg_read_in;
+        		reg_write_out	<= reg_write_in;
         		mem_to_reg_out	<= mem_to_reg_in;
 
 		end

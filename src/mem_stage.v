@@ -11,7 +11,7 @@ module mem_stage(
 	
 	
 	output mux_pcsrc,
-	output [331:0] read_data_out
+	output [31:0] read_data_out
 );
 	
 	dmem Data_Memory(.clk(clk),.reset(reset),.mem_write(mem_write),.mem_read(mem_read),.address(alu_data_in),.write_data(read_data2_in),.read_data(read_data_out));

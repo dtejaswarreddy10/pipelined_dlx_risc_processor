@@ -2,7 +2,7 @@
 This ALU Module Do the operation based on the Opcode 
 */
 
-module sc_mips_alu (
+module alu (
 	input [3:0] opcode,
 	input [31 :0] data_in1,data_in2,
 	output reg [31 :0] data_out,

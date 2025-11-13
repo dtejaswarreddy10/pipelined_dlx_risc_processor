@@ -9,7 +9,7 @@ module id_stage (
 	input clk,reset,
 	input [31:0] instruction,memtoreg_in,
 	input reg_write_in,
-	input regdst_in,
+	input [4:0]regdst_in,
 
 	output [31:0] sign_extend_out,read_data1_out,read_data2_out,
 	

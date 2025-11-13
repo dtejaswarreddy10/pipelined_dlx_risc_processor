@@ -11,14 +11,15 @@ module ex_stage(
 	input regdst,alusrc,
 	input [1:0] aluop,
 
-	output regdst_out,
+	output [4:0]regdst_out,
 	output [31:0]alu_data_out,add_out,
 	output Zero
 	
 
 );
-	reg [31:0] shift_left_2_out,alu_in2;
-	reg [3:0] alu_control_out;
+	wire [31:0] shift_left_2_out;
+	wire [31:0]alu_in2;
+	wire [3:0] alu_control_out;
 	
 
 	add Add(.data_in1(add_pc_4_in),.data_in2(shift_left_2_out),.data_out(add_out));
